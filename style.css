@@ -1,0 +1,143 @@
+/* 전체 스타일 */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefaf3;
+  margin: 0;
+  padding: 0;
+}
+
+/* 컨테이너 */
+.container {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* 제목 */
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #6b5e4f;
+  margin-bottom: 10px;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead th {
+  padding: 10px;
+  background-color: #b59c82;
+  color: white;
+  font-weight: 600;
+}
+
+tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eae4da;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #f8f4ee;
+}
+
+/* 상태 셀 강조 */
+.status-cell {
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.status-cell.sufficient {
+  background-color: #e8f5e9; /* 연한 초록 */
+  color: #4caf50; /* 진한 초록 */
+}
+
+.status-cell.insufficient {
+  background-color: #fdeaea; /* 연한 빨강 */
+  color: #d9534f; /* 진한 빨강 */
+}
+
+/* 드롭다운 스타일 */
+.status-dropdown {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* 드롭다운 아이콘 강조 */
+.status-dropdown option[value="sufficient"] {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.status-dropdown option[value="insufficient"] {
+  background-color: #fdeaea;
+  color: #d9534f;
+}
+
+/* 추가/삭제 버튼 등 기타 스타일 동일 */
+/* 추가 섹션 */
+.add-equipment {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fffdfb;
+  border: 1px solid #e3dcd0;
+  border-radius: 12px;
+}
+
+.add-equipment input,
+.add-equipment select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d6d1c4;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.add-equipment button {
+  background-color: #8cbf75;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-equipment button:hover {
+  background-color: #7aa668;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f0e9e0;
+  color: #555;
+}
+
+.delete-btn:hover {
+  background-color: #e0d8cc;
+}

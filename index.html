@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비품 관리 도구</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>비품 관리 도구</h1>
+    <table id="equipmentTable">
+      <thead>
+        <tr>
+          <th>비품 종류</th>
+          <th>비품 현황</th>
+          <th>삭제</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-status="sufficient">
+          <td>요가 매트</td>
+          <td class="status-cell">
+            <select class="status-dropdown">
+              <option value="sufficient" selected>충분</option>
+              <option value="insufficient">부족</option>
+            </select>
+          </td>
+          <td><button class="delete-btn">삭제</button></td>
+        </tr>
+        <tr data-status="insufficient">
+          <td>덤벨</td>
+          <td class="status-cell">
+            <select class="status-dropdown">
+              <option value="sufficient">충분</option>
+              <option value="insufficient" selected>부족</option>
+            </select>
+          </td>
+          <td><button class="delete-btn">삭제</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="add-equipment">
+      <input type="text" id="equipmentType" placeholder="비품 종류 입력">
+      <select id="equipmentStatus">
+        <option value="sufficient">충분</option>
+        <option value="insufficient">부족</option>
+      </select>
+      <button id="addBtn">추가</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
